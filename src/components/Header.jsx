@@ -1,8 +1,7 @@
     import React from 'react'
-    import logo from '../../public/images/web-logo.png'
 
 
-    export const Header = () => {
+    export const Header = ({logo}) => {
         const listItems=['Home','About us','Who we are','Contact us'];
     return (
         <div className='navbar-container'>

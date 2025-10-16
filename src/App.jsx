@@ -4,10 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './components/Header'
 import  './assets/style.min.css'
-
+import logo from '../public/images/web-logo.png'
+import { Footer } from './components/Footer'
+import menuContext from './components/Menu'
+import { Service } from './components/Service'
 function App() {
   const [count, setCount] = useState(0)
-
+  const   menuItem=['Home','About us','Who we are','Contact us'];
   return (
     <>
       {/* <div>
@@ -30,7 +33,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <Header/>
+   <menuContext.Provider value={menuItem}>
+      <Header logo={logo}/>
+      <Service/>
+      <Footer logo={logo}/>
+      </menuContext.Provider>
     </>
   )
 }

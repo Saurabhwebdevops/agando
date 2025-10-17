@@ -5,32 +5,37 @@ const services=[{
 
 },{
     title:'Social Media Marketing',
-    description:'We target the audience which you want to ',
+    description:'Our Professional team work with their expertise to enhance results ',
     link:'/social-media-marketing',
 
 },{
     title:'Search Engine Marketing',
-    description:'Proper result',
+    description:'Our Professional team work with their expertise to enhance results',
     link:'/search-engine-marketing',
 },{
 title:'Website Development',
-    description:'Proper result',
+    description:'Our Professional team work with their expertise to enhance results',
     link:'/web-development',
 }
 ,{
 title:'Logo Design',
-    description:'Proper result',
+    description:'Our Professional team work with their expertise to enhance results',
     link:'/logo-design',
 }
 ,{
 title:'Pay Per Click',
-    description:'Proper result',
+    description:'Our Professional team work with their expertise to enhance results',
     link:'/pay-per-click',
 }
 ,{
 title:'Graphic Design',
-    description:'Proper result',
+    description:'Our Professional team work with their expertise to enhance results',
     link:'/graphic-design',
+}
+,{
+title:'Website Development',
+    description:'Our Professional team work with their expertise to enhance results',
+    link:'/web-development',
 }
 ];
 

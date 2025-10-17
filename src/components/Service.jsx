@@ -11,7 +11,7 @@ export const Service = () => {
                    <div className="box">
                    <h5>{item.title}</h5>
                    <p>{item.description}</p>
-                   <a href={item.link}>Click Here</a>
+                   <a href={item.link}>Click here</a>
                    </div>
                </>
             })

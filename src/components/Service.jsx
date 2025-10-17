@@ -8,8 +8,10 @@ export const Service = () => {
           {
             services.map((item,key)=>{
                return <>
-                   <div className={`box-${key}`}>
-                    {item.title}
+                   <div className="box">
+                   <h5>{item.title}</h5>
+                   <p>{item.description}</p>
+                   <a href={item.link}>Click Here</a>
                    </div>
                </>
             })

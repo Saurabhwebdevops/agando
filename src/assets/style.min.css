@@ -2,6 +2,7 @@
                 color: #000;
                 margin: 0;
                 padding: 0;
+ font-family: "Poppins", sans-serif;
             }
             .services-area-start{
                 margin: 20px auto;
@@ -166,15 +167,98 @@
             .footer-container svg{
                 position: fixed;
                 bottom: 5px;
-                right: 0;
+                
+                right: 9px;
+    box-shadow: 0 0 2px 0px #000;
+    border-radius: 35px;
+    /* width: 40px; */
+    padding: 6px;
             }
 
 
+/*Form Css */
+form{
+    display: inline-grid;
+    align-items: center;
+    align-content: space-between;
+}
+.form-container{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:999;
+    display: flex;
+    top:0;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+    background-color: rgb(0,0,0,0.48);
+}
+.form-start{
+    width: 340px;
+    display: flex;
+        border-radius: 4px;
+    border: none;
+    box-shadow: -1px 0 2px 0px #dfdfdf;
+    flex-direction: column;
+    background: #fff;
+    padding: 18px;
+    position: relative;
+}
+.form-start h4{
+        width: 89%;
+    margin-bottom: 7px;
+    color: rebeccapurple;
+}
 
+input,select{
+    height: 28px;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    background-color: #fff;
+        outline: none;
+    border: .635px solid #eded;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 0px #000;
 
+}
+input:focus-visible,select:focus-visible{
+    outline-color: blue;
+    transition: opacity .5s ease;
+}
+.close{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+
+}
+.submit{
+    width: 50%;
+    margin: auto;
+    height: 30px;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+    background: blue;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
         @media  screen and (max-width:749px) {
             .menu-list li{
                 display: none;
+            }
+            .services-area-start,.footer-container{
+                grid-template-columns: auto;
+            }
+            .form-start{
+                width: 80%;
             }
             
         }  

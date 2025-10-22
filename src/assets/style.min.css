@@ -100,8 +100,33 @@
             .menu-list li a{
                 width: max-content;
                 padding: 3px 15px;
-                background-color: #ededed;
+                text-decoration: none;
                 border-radius: 35px;
+                cursor: pointer;
+                transition: all .5s ease;
+                position: relative;
+
+            }
+             .menu-list li a:hover{
+                 background-color: #ededed;
+                 transition: opacity .5s ease;
+                 height: 30px;
+                 
+            }
+            .chat-form-start{
+               position: fixed;
+    bottom: 4px;
+    padding: 24px;
+    z-index: 9999;
+    background: #fff;
+    right: 3px;
+    width: 300px;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0px 0px 1.2px 0.4px #ededed;
+            }
+            .chat-form-start form{
+                width: 100%;
             }
             .navbar-menu-item{
                 width: 100%;
@@ -213,7 +238,7 @@ form{
     color: rebeccapurple;
 }
 
-input,select{
+input,select,textarea{
     height: 28px;
     border: none;
     border-bottom: 1px solid #000;
@@ -249,6 +274,72 @@ input:focus-visible,select:focus-visible{
     color: #fff;
     font-weight: 700;
     cursor: pointer;
+}
+.contact__form__start{
+    width: 100%;
+    margin-left: 10%;
+   
+}
+.contact-form-container{
+       background-color: #5779ff45;
+    width: 100%;
+    max-width: 1024px;
+    height: 450px;
+    margin: 5% auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+.contact__form{
+    width: 400px;
+    margin-left: 30px;
+}
+
+.contact__info{
+    display: flex
+;
+    /* grid-template-columns: 1fr 1fr; */
+    justify-items: center;
+    /* align-items: center; */
+    width: 400px;
+    flex-direction: column;
+    margin-left: 30%;
+    height: 250px;
+    justify-content: space-between;
+}
+.contact__icon{
+        width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 1px #ededed;
+    padding: 1px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 12px;
+
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.about-us-container{
+    width: 100%;
+    max-width: 1024px;
+    margin:  20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+
+}
+.medium{
+    font-size: 2em;
+}
+.margin{
+    margin: 25px auto;
 }
         @media  screen and (max-width:749px) {
             .menu-list li{

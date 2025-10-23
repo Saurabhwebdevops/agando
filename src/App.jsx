@@ -13,6 +13,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
 import Who from './components/Who';
+import   {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const menuItem = ['Home', 'About us', 'Who we are', 'Contact us'];

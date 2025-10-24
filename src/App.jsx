@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import "@fontsource/poppins/400.css";
-import "@fontsource/poppins/600.css";
+
 import { Header } from './components/Header';
 import './assets/style.min.css';
 import logo from '../public/images/web-logo.png';
@@ -13,6 +12,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
 import Who from './components/Who';
+import database from './firebase'
+import { ref,push } from 'firebase/database'
+
 import   {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 

@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import menuContext from './Menu'
 import { toast, ToastContainer } from 'react-toastify'
 import { ref,push } from 'firebase/database'
-import database from '../firebase'
+
 import axios from 'axios'
 export const Footer = ({ logo }) => {
   useEffect(()=>{
@@ -21,9 +21,8 @@ export const Footer = ({ logo }) => {
     [name]:value
    });
   }
- const SubmitData = (e) => {
-  e.preventDefault();
-
+ const SubmitData = (eV) => {
+  
   push(ref(database, 'chat_data'), {
     name: chatdata.chat_name,
     email: chatdata.chat_email,
